@@ -29,10 +29,10 @@ The Music Tracks Web App has a variety of features that make it a great tool for
 ***
 The Album Management System includes a role-based access control system, which allows admins to control the permissions and capabilities of each user. Here is a brief overview of each role:
 
-* Coordinator: Can add new albums and artists, but must have their submissions approved by an admin before they are added to the database
-* Clerk: Can add new albums and artists, but must have their submissions approved by an admin before they are added to the database
-* Executive: Can add new albums and artists without admin approval, and can also delete albums and manage user roles
-* Staff: Can only view albums and artists, and cannot add, edit, or delete any data in the database
+* Coordinator: Only can add new albums and tracks
+* Clerk: Only can add new albums, artists and tracks
+* Executive: Can add new albums, artists and tracks, can also delete albums and manage user roles.
+* Staff: Can only view albums and artists, and cannot add, edit, or delete any data in the database.
 
 ### Getting Started
 ***
@@ -40,7 +40,7 @@ To get started with the Music Tracks Web App, you will need to follow these step
 
 1.) Clone this repository to your local machine
 
-2.) Ensure that you have the latest version of .NET installed on your machine 
+2.) Ensure that you have the latest version of ASP.NET installed on your machine 
 
 3.) Open the project in Visual Studio or your preferred code editor
 
