@@ -1,0 +1,43 @@
+﻿@model W2022A6NNB.Models.TrackBaseViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Track details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+            <hr />
+        </dd>
+
+        <dt>
+            Sample clip
+        </dt>
+
+        <dd>
+            <audio src="/Audio/@Model.Id/Clip" controls="controls"></audio>
+            <hr />
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Composers)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Composers)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
