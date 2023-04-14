@@ -95,13 +95,7 @@ namespace W2022A6NNB.Controllers
         }
 
 
-        // Add your methods below and call them from controllers. Ensure that your methods accept
-        // and deliver ONLY view model objects and collections. When working with collections, the
-        // return type is almost always IEnumerable<T>.
-        //
-        // Remember to use the suggested naming convention, for example:
-        // ProductGetAll(), ProductGetById(), ProductAdd(), ProductEdit(), and ProductDelete().
-
+     
         //Genre Methods
         public IEnumerable<GenreBaseViewModel> GenreGetAll()
         {
@@ -204,25 +198,6 @@ namespace W2022A6NNB.Controllers
             return (track.Audio == null || track.AudioContentType == null) ? null : mapper.Map<Track, TrackClipViewModel>(track);
         }
 
-
-        /*public TrackBaseViewModel TrackAdd(TrackAddViewModel newTrack)
-        {
-            var album = ds.Albums.Find(newTrack.AlbumId);
-            var addTrack = ds.Tracks.Add(mapper.Map<TrackAddViewModel, Track>(newTrack));
-
-            byte[] audioByte = new byte[newTrack.AudioUpload.ContentLength];
-            newTrack.AudioUpload.InputStream.Read(audioByte, 0, newTrack.AudioUpload.ContentLength);
-
-            addTrack.AudioContentType = newTrack.AudioUpload.ContentType;
-            addTrack.Audio = audioByte;
-            addTrack.Albums.Add(album);
-            addTrack.Clerk = User.Name;
-
-
-            ds.SaveChanges();
-
-            return (addTrack == null) ? null : mapper.Map<Track, TrackBaseViewModel>(addTrack);
-        }*/
 
         public TrackBaseViewModel TrackAdd(TrackAddViewModel trackAddViewModel)
         {
@@ -342,11 +317,6 @@ namespace W2022A6NNB.Controllers
         #endregion
 
         #region Load Data Methods
-
-        // Add some programmatically-generated objects to the data store
-        // You can write one method or many methods but remember to
-        // check for existing data first.  You will call this/these method(s)
-        // from a controller action.
 
         public bool LoadData()
         {
@@ -625,16 +595,6 @@ namespace W2022A6NNB.Controllers
 
     #region RequestUser Class
 
-    // This "RequestUser" class includes many convenient members that make it
-    // easier work with the authenticated user and render user account info.
-    // Study the properties and methods, and think about how you could use this class.
-
-    // How to use...
-    // In the Manager class, declare a new property named User:
-    //    public RequestUser User { get; private set; }
-
-    // Then in the constructor of the Manager class, initialize its value:
-    //    User = new RequestUser(HttpContext.Current.User as ClaimsPrincipal);
 
     public class RequestUser
     {
