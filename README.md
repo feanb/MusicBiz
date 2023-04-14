@@ -65,5 +65,5 @@ A list of technologies/libraries used within the project:
 * [NuGet](https://www.nuget.org/)
 
 ***
-Builted by feanb
+Built by feanb
 ***
