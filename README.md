@@ -1,8 +1,6 @@
 # MusicBiz
 
-An web app built using C# and JavaScript
-Music Tracks Web App
-Welcome to the Music Tracks Web App, a web application built using ASP.NET and JavaScript that allows users to manage their favorite music tracks and playlists. With this app, users can easily add tracks to their playlists, edit track information, and even view artist albums. Additionally, the app features a robust user authentication and role management system, ensuring that user data is secure.
+Welcome to the MusicBiz, a web application built using ASP.NET and JavaScript that allows users to manage their favorite music tracks and playlists. With this app, users can easily add tracks to their playlists, edit track information, and even view artist albums. Additionally, the app features a robust user authentication and role management system, ensuring that user data is secure.
 
 ## Table of Contents
 1. [Features](#features)
@@ -13,7 +11,7 @@ Welcome to the Music Tracks Web App, a web application built using ASP.NET and J
 
 ### Features
 ***
-The Music Tracks Web App has a variety of features that make it a great tool for managing your music library:
+The MusicBiz App has a variety of features that make it a great tool for managing your music library:
 
 * Add tracks to your playlist: Easily add new tracks to your playlist by searching for them in the app's database
 
@@ -36,7 +34,7 @@ The Album Management System includes a role-based access control system, which a
 
 ### Getting Started
 ***
-To get started with the Music Tracks Web App, you will need to follow these steps:
+To get started with the MusicBiz, you will need to follow these steps:
 
 1.) Clone this repository to your local machine
 
@@ -52,7 +50,7 @@ To get started with the Music Tracks Web App, you will need to follow these step
 
 ### Contributing
 ***
-Provide instructions on how to collaborate with your project.
+How to collaborate to MusicBiz.
 > * Fork this repository to your own GitHub account
 > * Create a new branch for your changes
 > * Make your changes and commit them with clear and descriptive commit messages
